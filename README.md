@@ -13,7 +13,9 @@
 
 ## Run
 
+```bash
 npm install
 npm run dev
+```
 
 Note: Since JSONPlaceholder is a mock API, data persistence is simulated through client-side state updates.
