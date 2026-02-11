@@ -1,17 +1,11 @@
-// contexts/PostContext.tsx
 'use client';
 
 import { createContext, useContext, useState } from 'react';
-import { Post } from '@/types/post';
-
-type PostContextType = {
-  posts: Post[];
-  setPosts: (p: Post[]) => void;
-};
+import { Post, PostContextType, PostProviderProps } from '@/types/post';
 
 const PostContext = createContext<PostContextType | null>(null);
 
-export const PostProvider = ({ children, initialPosts }) => {
+export const PostProvider = ({ children, initialPosts }: PostProviderProps) => {
   const [posts, setPosts] = useState<Post[]>(initialPosts);
   return (
     <PostContext.Provider value={{ posts, setPosts }}>

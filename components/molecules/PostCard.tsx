@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePosts } from '@/contexts/PostContexts';
 import { Post } from '@/types/post';
 
-
 const colors = [
   'bg-yellow-200',
   'bg-blue-200',
